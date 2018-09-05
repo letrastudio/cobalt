@@ -1,0 +1,27 @@
+// Add horizontal scrolling to non-responsive wide elements like tables
+.overflow-container {
+  $overflow-container-padding: 0.75rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: $overflow-container-padding 0;
+  display: grid;
+  grid-template-columns: $overflow-container-padding auto $overflow-container-padding;
+  border: $base-border;
+  border-radius: $base-border-radius;
+  &::before,
+  &::after {
+    content: "";
+  }
+  @include spacing(2);
+  margin-left: $overflow-container-padding * -1;
+  margin-right: $overflow-container-padding * -1;
+  @include flush-margins(1);
+}
+
+// Add responsive resizing to embedded iframes, using 16:9 ratio
+.embed-container {
+  @include aspect-ratio(16/9, iframe);
+  > :not(iframe) {
+    display: none;
+  }
+}

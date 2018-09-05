@@ -1,0 +1,23 @@
+// Compatible with Kramdown footnotes
+// https://kramdown.gettalong.org
+
+a[href].footnote,
+a[href].reversefootnote {
+  padding: 0.125em;
+  text-decoration: none;
+}
+.footnotes {
+  color: $faded-font-color;
+  @include spacing(2);
+  #{$text-block-elements} {
+    max-width: none;
+  }
+  > ol {
+    $footnotes-font-size: 0.875em;
+    border-top: $base-border;
+    font-size: $footnotes-font-size;
+    margin: 0;
+    max-width: $text-max-width / strip-unit($footnotes-font-size);
+    padding-top: $text-spacing;
+  }
+}

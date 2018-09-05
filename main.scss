@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+// 1. Import _cobalt.scss first
+// This file is library code and shouldn't be manually modified
+@import "cobalt";
+
+// 2. _variables.scss is imported by _cobalt.scss, must be in the same directory
+// Cobalt variables can be edited in it, and any custom variables can be added
+// Every variable is optional — the file can be empty, but it must exist
+
+// 3. Optionally import cobalt extras, in any order
+@import "extras/responsive-containers";
+@import "extras/text";
+@import "extras/footnotes";
+@import "extras/highlight";
+@import "extras/layout";
