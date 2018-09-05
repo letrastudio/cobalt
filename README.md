@@ -1,6 +1,6 @@
 # cobalt
 
-Cobalt is an all-purpose SCSS framework with as few styles as possible.
+Cobalt is an all-purpose SCSS boilerplate with as few styles as possible.
 
 Inspired by default browser stylesheets, it's meant to make almost any HTML look readable, using "semantic" styles. It sets up a strong typographic foundation and a versatile spacing system based on margin collapsing, in addition to handling tables, code blocks, and form elements in a modern way.
 
