@@ -26,9 +26,11 @@ $text-max-width: 35em;          // maximum width for text elements
 $page-max-width: 56rem;         // maximum width for page layout
 
 // Colors
-$dark-gray: #2a2a2a;
-$medium-gray: silver;
-$light-gray: whitesmoke;
+$black-gray:  hsl(0, 0%, 16%);
+$white-gray:  hsl(0, 0%, 96%);
+$dark-gray:   mix($black-gray, $white-gray, 75%);
+$medium-gray: mix($black-gray, $white-gray, 50%);
+$light-gray:  mix($black-gray, $white-gray, 25%);
 $blue: royalblue;
 
 $sans-serif: (
@@ -293,7 +295,7 @@ $pre-spacing: 2 !default;
 $hr-spacing: 2 !default;
 
 // Font Colors
-$base-font-color: $dark-gray !default;
+$base-font-color: $black-gray !default;
 $faded-font-color: rgba($base-font-color, 0.7) !default;
 $blockquote-font-color: $faded-font-color !default;
 $figcaption-font-color: $faded-font-color !default;
@@ -302,7 +304,7 @@ $link-hover-color: darken($link-color, 10%) !default;
 $link-active-color: darken($link-color, 20%) !default;
 
 // Borders
-$base-border-color: $medium-gray !default;
+$base-border-color: $light-gray !default;
 $base-border-width: 1px !default;
 $base-border: $base-border-width solid $base-border-color !default;
 $base-border-radius: 0.25em !default;
@@ -534,7 +536,7 @@ $include-table-styles: true !default;
 
 $table-border: $base-border !default;
 $table-padding: $text-spacing !default;
-$thead-background-color: $light-gray !default;
+$thead-background-color: $white-gray !default;
 
 @if $include-table-styles == true {
   
@@ -595,8 +597,8 @@ $thead-background-color: $light-gray !default;
 
 $include-code-styles: true !default;
 
-$code-font-color: $dark-gray !default;
-$code-background-color: $light-gray !default;
+$code-font-color: $black-gray !default;
+$code-background-color: $white-gray !default;
 $code-border-radius: $base-border-radius !default;
 $code-font-size: 0.9375em !default;
 $code-padding: 0.0625em 0.25em !default;

@@ -37,9 +37,15 @@ $page-max-width: 56rem;         // maximum width for page layout
 // Colors
 // -----------------------------------------------------------------------------
 
-$dark-gray: #2a2a2a;
-$medium-gray: silver;
-$light-gray: whitesmoke;
+$black-gray:  hsl(0, 0%, 16%);
+$white-gray:  hsl(0, 0%, 96%);
+// bump saturation a bit for warm reddish grays
+// and change hue to 240 for cool blueish grays
+
+$dark-gray:   mix($black-gray, $white-gray, 75%);
+$medium-gray: mix($black-gray, $white-gray, 50%);
+$light-gray:  mix($black-gray, $white-gray, 25%);
+
 $blue: royalblue;
 
 // Add custom colors here...
