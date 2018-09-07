@@ -296,7 +296,7 @@ $hr-spacing: 2 !default;
 
 // Font Colors
 $base-font-color: $black-gray !default;
-$faded-font-color: rgba($base-font-color, 0.7) !default;
+$faded-font-color: $dark-gray !default;
 $blockquote-font-color: $faded-font-color !default;
 $figcaption-font-color: $faded-font-color !default;
 $link-color: $blue !default;
